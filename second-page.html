@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="shared-css.css">
+        <meta charset="utf-8">
+        <meta name="description" content="Angelina Lin's final project -
+        Page 2 - presenting places she visited in Spring 2024 and allowing her to refresh her memories and make reflections">
+        <title>Assignement 9: Final Project Second Page</title>
+        <style>
+            #header{
+                background-image: url(img/spring_background.jpg);
+                color:rgb(255, 255, 201);
+            }
+            body{
+                background-color: lightyellow;
+            }
+            #first-part{
+                display:flex;
+            }
+            #second-part{
+                display:flex;
+                margin-top: 50px;
+            }
+            #left-side{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 600px;
+            }
+            #right-side{
+                margin-left: 20px;
+                width: 400px;
+            }
+            #left-side-2{
+                width: 500px;
+                margin-right: 20px;
+            }
+            #right-side-2{
+                display: flex; 
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 600px;
+                text-align: center;
+            }
+            .image_box{
+                width:200px;
+                height:300px;
+            }
+
+            .image_box img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid grey;
+                border-radius: 15px;
+            }
+            #content{
+                margin-top: 20px;
+                background-color: pink;
+            }
+            p{
+                font-size:20px;
+            }
+            #container{
+            margin-top: 20px;
+            width:1000px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            #page2-image3{
+                margin-top: 20px;
+                margin-bottom:20px;
+                width: 300px;
+                height:200px;
+                border: 1px solid grey;
+                border-radius: 15px;
+            }
+            #page2-image4{
+                width: 300px;
+                height:300px;
+                border: 1px solid grey;
+                border-radius: 50%;
+                object-fit: cover; 
+                overflow: hidden;
+            }
+            #subtitle{
+                color: rgb(232, 196, 87);
+            }
+
+
+        </style>
+    
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="second-page.html">Spring 2024</a>
+            <a href="third-page.html">Summer 2024</a>
+            <a href="fourth-page.html">Fall 2024</a>
+            <a href="Contact-Page.html">Contact</a>
+        </div>
+        <div id="header">
+            <h1>Spring 2024</h1>
+        </div>
+
+        <div id="container">
+            <h2 id="subtitle">Enlarge the image by clicking it</h2>
+            <div id="first-part">
+                <div id="left-side">
+                    <div id="box_1" class="image_box">
+                        <img src="img/page2-image1.JPG" alt="spring-image1">
+                    </div>
+                    <div id="box_2"class="image_box">
+                        <img src="img/page2-image2.JPG" alt="spring-image2">
+                    </div>
+                </div>
+
+                <div id="right-side">
+                    <h3>January: trip to Lake Tahoe</h3>
+                    <p>In January, I had the opportunity to visit Lake Tahoe and experience skiing for the first time at Heavenly Mountain Resort. 
+                        The left image is me sking. Although I stumbled badly multiple times, it was an unforgettable experience because 
+                        I challenged myself to step outside my comfort zone and embrace new challenges. The image
+                    on the right is the stunning landscapes of Heavenly Mountain. It is so beautiful and I cannot wait to visit again in the future.</p>
+
+                </div>
+            </div>
+            <div id="second-part">
+                <div id="left-side-2">
+                    <h3>March: a visit to Long Beach Aquarium</h3>
+                    <p>In March, I visited Long Beach Aquarium with my friend Kelly. I was deeply impressed by
+                        various types of sea creatures, such as sea otters, sharks, and sea jellies. Seeing some endangered species, 
+                        such as Green sea turtles, deeply reinforced the importance of protecting our environment—not just for humans, but for all the species we share this planet with.
+                        This visit was a powerful reminder that our actions play a critical role in preserving the delicate balance of our shared home.</p>
+                    <p>
+                        I believe this place is also an excellent destination for children to visit because there are a lot of educational programs and hands-on activities 
+                        that inspire curiosity and foster a deeper understanding of ocean life. 
+                        Reflecting on the photos from my visit, I realize how much this experience allowed me to not only relax from connect with the beauty of nature.
+                    </p>
+                    </p>
+
+                </div>
+                <div id="right-side-2">
+                    
+                    <img id="page2-image3" src="img/page2-image3.jpg" alt="spring-image3">
+                    
+                    <img id="page2-image4"src="img/page2-image4.JPG" alt="spring-image4">
+                    
+                        
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            $('#box_1').click(function() {
+                if ($(this).css('width') === '200px') {
+            $(this).css({'width': '300px', 'height': '400px'});
+        } else {
+            $(this).css({'width': '200px', 'height': '300px'});
+        }
+        });
+            $('#box_2').click(function() {
+                if ($(this).css('width') === '200px') {
+                    $(this).css({'width': '300px', 'height': '400px'});
+                } else {
+                    $(this).css({'width': '200px', 'height': '300px'});
+                }
+            });
+
+            $('#page2-image3').click(function() {
+                if ($(this).css('width') === '300px') {
+            $(this).css({'width': '400px', 'height': '300px'});
+        } else {
+            $(this).css({'width': '300px', 'height': '200px'});
+        }
+        });
+
+            $('#page2-image4').click(function(){
+                if ($(this).css('width') === '300px') {
+                    $(this).css('border-radius','0px');
+                    $(this).css({'width': '350px', 'height': '400px'});
+        } else {
+            $(this).css('border-radius','50%');
+            $(this).css({'width': '300px', 'height': '300px'});
+        }
+            });
+
+        </script>
+
+    </body>

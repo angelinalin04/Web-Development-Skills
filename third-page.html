@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="shared-css.css">
+        <meta charset="utf-8">
+        <meta name="description" content="Angelina Lin's final project -
+        Page 3. This page shows places she visited in China and the delicious food she has tried in Summer 2024">
+        <title>Final Project - third Page</title>
+        <style>
+            #header{
+                background-image: url(img/summer.jpg);
+                color:white;
+            }
+            #first-part{
+                display:flex;
+                justify-content: space-evenly;
+
+            }
+            #container{
+            margin-top: 20px;
+            width:1200px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            .image_box{
+                width:250px;
+                height:300px;
+            }
+
+            .image_box img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 2px solid rgb(148, 209, 229);
+            }
+            p{
+                font-size: 18px;
+            }
+            #second-part{
+                margin-top: 30px;
+                display:flex;
+            }
+            #left{
+                width:700px;
+                display:flex;
+                justify-content: space-evenly;
+            }
+
+            #right{
+                margin-right: 20px;
+                width:400px;
+
+            }
+            #parallax-container{
+                height:400px;
+                overflow: hidden;
+            }
+            #parallax-container img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="second-page.html">Spring 2024</a>
+            <a href="third-page.html">Summer 2024</a>
+            <a href="fourth-page.html">Fall 2024</a>
+            <a href="Contact-Page.html">Contact</a>
+        </div>
+
+        <div id="header">
+            <h1>Summer 2024</h1>
+        </div>
+        <div id="container">
+            <h3>July: trip to Beijing, China</h3>
+            <div id="first-part">
+                <div id="section-1">
+                    <div class="image_box">
+                        <img src="img/Page3_image1.jpg" alt="summer-image1">
+                    </div>
+                    <p>Famous food: Beijing Duck</p>
+                </div>
+                <div id="section-2">
+                    <div class="image_box">
+                        <img src="img/Page3_image2.jpg" alt="summer-image2">
+                    </div>
+                    <p>Famous food: Beijing Pastries</p>
+                </div>
+                <div id='section-3'>
+                    <div class="image_box">
+                        <img src="img/Page3_image3.JPEG" alt="summer-image3">
+                    </div>
+                    <p>Me visiting Shi Cha Hai </p>
+                </div>
+    
+                <div id="section-4">
+                    <div class="image_box">
+                        <img src="img/Page3_image4.jpg" alt="summer-image4">
+                    </div>
+                    <p>My visit to the Drum Tower</p>
+                </div>
+            </div>
+            <div id="explanation">
+                <p>This summer, I went back to China to spend time with my family and hang out with my friends.
+                    I visited Beijing for the first time to see some of my friends and explore the city. My favorite 
+                    food there was Beijing Duck (shown in the first image). The duck was roasted to perfection—crispy on 
+                    the outside and tender on the inside. I also tried Beijing pastries for the first time. These pastries 
+                    came in various shapes and had distinct appearances. Their flavors varied as well, including rose and red bean.
+                </p>
+                <p>The places that impressed me the most were Shi Cha Hai and Drum Tower. Standing on the top floor of the Drum Tower, I could see
+                    the beatiful view of ancient Chinese buildings and the Shi Cha Hai lake. The lake was lively, with many people boating on its calm waters.
+                     The last image was me striking a pose in front of the Drum Tower. I truly love Beijing because it is such a unique city, rich with history and stories rooted in 
+                these old architecture.</p>
+            </div>
+            <div id="parallax-container">
+                <img src="img/parellax.jpg" alt="Parallax" data-rellax-speed="5">
+            </div>
+            <h3>July: Shanghai, China</h3>
+            <div id="second-part">
+                <div id="left">
+                    <div class="image_box">
+                        <img src="img/Page3-image6.jpg" alt="summer-image5">
+                    </div>
+                    <div class="image_box">
+                        <img src="img/Page3-image5.jpg" alt="summer-image6">
+                    </div>
+                </div>
+                <div id="right">
+                    <p>After my trip to Beijing, I returned to my hometown, Shanghai,  where I had the chance to 
+                        reconnect with friends and explore new experiences.</p>
+                    <p>One highlight of my time there was visiting the Gentle Monster Exhibition with my friend Ivy.
+                        This exhibition was created not only to showcase new products, but also to celebrate 
+                        art and fashion through its innovative decorations.
+                        We were both impressed by the authentic giant face sculpture (shown on the left image).</p>
+                    <p>As we wandered through the exhibit, Ivy and I also had fun trying on various kinds of eyeglasses (shown in the right image)
+                        It was an unforgettable experience for us to appreciate fashion and art.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="rellax/rellax.min.js"></script>
+
+        <script>
+            var rellax = new Rellax('#parallax-container img');
+        </script>
+        
+
+    </body>
+</html>

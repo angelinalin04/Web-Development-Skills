@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="shared-css.css">
+        <meta charset="utf-8">
+        <meta name="description" content="Angelina Lin's final project -
+        Her 2024 Photo Gallery - presenting her cherished memories and reflections from a year of growth and creativity">
+        <title>Final Project Home Page</title>
+        <style>
+            #header{
+                background-image: url('img/calm_background_homepage.jpg');
+                color:rgb(216, 111, 202);
+            }
+            #navbar{
+                display: flex;
+                background-color: rgb(244, 249, 210);
+                justify-content:center;
+            }
+            #navbar a {
+                text-decoration: none;
+                width: 180px;
+                display: block;
+                text-align:center;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: rgb(196, 149, 181);
+            }
+            h2{
+                text-align: center;
+                margin-top: 0;
+                padding-top: 20px;
+                font-family: "waltographUI",fantasy;
+                color: rgb(249, 149, 166);
+            }
+            h3{
+                text-align: center;
+                font-family: "waltographUI",fantasy;
+                color: rgb(249, 149, 166);
+
+            }
+            #introduction{
+                font-size: 20px;
+            }
+            
+            body{
+                background-color:rgb(208, 241, 241);
+            }
+            #gallery{
+                flex-direction: column;
+            }
+            #first-row{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                margin-bottom:60px;
+            }
+            #second-row,
+            #third-row{
+                margin-top: 60px;
+                margin-bottom:60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .image_box{
+                width:200px;
+                height:200px;
+            }
+
+            .image_box img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            #image9{
+                object-position: center 80%;
+            }
+            .image_box:hover{
+                opacity: 0.8;
+            }
+            .image_box p{
+			    text-align:center;
+			    display: none;
+		    }
+            .image_box:hover p {
+			    display:block;
+		    }
+            #content{
+                width:900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #content{
+            width:900px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            html{
+                 scroll-behavior: smooth;
+                }      
+
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="second-page.html">Spring 2024</a>
+            <a href="third-page.html">Summer 2024</a>
+            <a href="fourth-page.html">Fall 2024</a>
+            <a href="Contact-Page.html">Contact</a>
+        </div>
+        <div id="header">
+            <h1>Angelina Lin's 2024 Photo Gallery</h1>
+        </div>
+        <div id="content">
+            <div id="intro">
+                <h2>About my Final Project</h2>
+                <p id="introduction">My name is Angelina Lin. For my ITP 104 Final Project, I decided to make a 2024 photo gallery of my life. 
+                I decided to apply the web development skills I have learned throughout this semester to build a web-based photo gallery that would not only train and strength my web-building skills, but also reflect and cherish my memeories. 
+                As the year comes to a close, I hope that looking back on this website in the future will bring back all of my pleasant memories. I also welcome and invite everyone to take a glance at my photo gallery and share in the delight I have felt.</p>
+            </div>
+            <div id="gallery">
+                <h2>A Brief Overview of Memeories</h2>
+                <h3>Hover over an image</h3>
+                <div id="first-row">
+                    <div class="image_box">
+                        <img src="img/image1.jpg" alt="image_1">
+                        <p>Me in Lake Tahoe</p>
+                    </div>
+                    <div class="image_box">
+                        <img src="img/image2.jpg" alt="image_2">
+                        <p>The beautiful Sunset in Santa Barbara</p>
+                    </div>
+                    <div class="image_box">
+                        <img src="img/image3.jpg" alt="image_3">
+                        <p>Me in Japan Town in San Fransisco</p>
+                    </div>
+                </div>
+
+                <div id="second-row">
+                    <div class="image_box">
+                        <img src="img/image4.jpg" alt="image_4">
+                        <p>Me in Long Beach Aquarium</p>
+                    </div>
+                    <div class="image_box">
+                        <img src="img/image5.jpg" alt="image_5">
+                        <p>Me and My Friends Taking a ATV ride</p>
+
+                    </div>
+                    <div class="image_box">
+                        <img src="img/image6.jpg" alt="image_6">
+                        <p>Me Celebrating my Birthday</p>
+
+                    </div>
+                </div>
+
+                <div id="third-row">
+                    <div class="image_box">
+                        <img src="img/image7.jpg" alt="image_7">
+                        <p>Me visiting Beijing, China</p>
+                    </div>
+                    <div class="image_box">
+                        <img src="img/image8.jpg" alt="image_8">
+                        <p>Me running on the beach in Half Moon Bay</p>
+                    </div>
+                    <div class="image_box">
+                        <img id="image9" src="img/image9.jpg" alt="image_9">
+                        <p>Me and My Friends in San Diego</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
